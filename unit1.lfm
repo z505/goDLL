@@ -1,8 +1,31 @@
 object Form1: TForm1
-  Left = 376
+  Left = 564
   Height = 240
-  Top = 196
+  Top = 96
   Width = 320
   Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
   LCLVersion = '1.6.0.4'
+  object Button1: TButton
+    Left = 87
+    Height = 25
+    Top = 67
+    Width = 75
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object status: TMemo
+    Left = 0
+    Height = 90
+    Top = 150
+    Width = 320
+    Align = alBottom
+    Lines.Strings = (
+      'Status:'
+    )
+    ScrollBars = ssVertical
+    TabOrder = 1
+  end
 end
