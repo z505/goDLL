@@ -99,6 +99,7 @@ begin
   // PROBLEM: can't unload library because it crashes the program?
   // only can unload it at the end of the program.
   // Go runtime conflicting with fpc?
+  // Maybe this is it: https://github.com/golang/go/issues/11100
 
   // StatusLn('Unloading library: '+ GO_LIB);
   // UnloadLib;
