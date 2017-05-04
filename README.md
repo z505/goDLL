@@ -13,3 +13,10 @@ Well known issues with Go DLL's:
 * A go runtime (which is included in all golang programs/code) is similar to a borland BPL or a .net runtime: multiple runtimes can be tricky/conflicting. It can even overwrite data if multiple runtimes exist, possibly even more tricky than a BPL. This again could be fixed in the future by golang authors if they work on dll's and unloading more in the future.
 * regarding unix dll/so: I have not tested or read about it enough to know the details. This project is just a Microsoft Windows DLL project example, could also work on unix
 * Go DLL, not "God II"
+
+Other ideas:
+* Try statically linking go code into fpc, instead of dll put the code right into the exe directly using .a files, and making an fpc .h equivalent (should be easy)
+* show its use also in a plain c program since not all people interested in go dll's are using fpc/lazarus
+* try come up with solutions to fix go runtime problems and unloading problems. See golang open issues 11100 and 11058
+  * https://github.com/golang/go/issues/11100
+  * https://github.com/golang/go/issues/11058
