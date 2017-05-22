@@ -1,9 +1,9 @@
 # goDLL
-Project to show people how to create MS Windows golang DLL, then load it into lazarus program, or a plain fpc command line program or another golang exe
+Project to show people how to create MS Windows golang DLL, then load it into lazarus program, or a plain fpc command line program or another golang exe.  This implies you can also use the DLL in plain C or C++ Visual Studio or GCC project.
 
 Current way of making a DLL:
-* compile go code with regular go compiler and put that code into .a and .h files. These are just like C code that GCC can use, but stored in compiled .a and .h files
-* then build a dll based on the dummy .c file that just links the .a and .h files (go code) into a dll, using GCC to build the dll
+* compile go code with regular go compiler and put that puts code into .a and .h files for you. These are just like C code that GCC can use, but stored in compiled .a and .h files
+* then build a dll based on the dummy .c file (CGO) that just links the .a and .h files (go code) into a dll, using CGO (GCC automatically from go) to build the dll
 
 Well known issues with Go DLL's:
 
