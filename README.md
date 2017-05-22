@@ -1,5 +1,5 @@
 # goDLL
-Project to show people how to create MS Windows golang DLL, then load it into lazarus program, or a plain fpc command line program or another golang exe.  This implies you can also use the DLL in plain C or C++ Visual Studio or GCC project.
+Project to show people how to create MS Windows golang DLL, then load it into lazarus program, or a plain fpc command line program or another golang exe.  This implies you can also use the DLL in plain C or C++ Visual Studio or GCC project. Should also be able to port this to bsd/linux/macOS
 
 Current way of making a DLL:
 * compile go code with regular go compiler and put that puts code into .a and .h files for you. These are just like C code that GCC can use, but stored in compiled .a and .h files
